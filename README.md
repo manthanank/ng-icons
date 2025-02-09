@@ -1,59 +1,50 @@
 # NgIcons
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.1.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0.
 
-## Development server
+![npm](https://img.shields.io/npm/dw/@manthanankolekar/ng-icons)
+![npm](https://img.shields.io/npm/dm/@manthanankolekar/ng-icons)
+![npm](https://img.shields.io/npm/dy/@manthanankolekar/ng-icons)
+![npm](https://img.shields.io/npm/dt/@manthanankolekar/ng-icons)
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Installation
 
 ```bash
-ng generate component component-name
+npm install @manthanankolekar/ng-icons
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Usage
 
-```bash
-ng generate --help
+Import
+
+```typescript
+import { Component } from '@angular/core';
+
+import { NgIconsComponent } from '@manthanankolekar/ng-icons';
+
+@Component({
+   selector: 'app-root',
+   imports: [
+      NgIconsComponent
+   ],
+   templateUrl: './app.component.html',
+   styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+   title = 'ng-icons';
+}
 ```
 
-## Building
+Use
 
-To build the project run:
-
-```bash
-ng build
+```html
+<ng-icons name="home" [size]="32" color="blue"></ng-icons>
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Demo
 
-## Running unit tests
+[Stackblitz](https://stackblitz.com/edit/ng-icons-example)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## License
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
